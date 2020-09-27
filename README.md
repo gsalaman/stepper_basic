@@ -42,7 +42,7 @@ We select a "step size" by using MS1 and MS2.  In our current sketch, we've got 
 | L | H | Quarter Step | 
 | L | L | Eighth Step |
 
-So, if we make both "LOW", we'll only be doing eighth steps...meaning we'll spin 1/8th as slow.  Try it!
+So, if we make both "LOW", we'll be doing full steps...meaning we'll spin eight times as fast.  Try it!
 
 ### Direction
 The `DIR` pin controls which way our stepper is spinning...and this depends on the polarity of the coil connections.  If we want to reverse the direction, change this line (in setup):
