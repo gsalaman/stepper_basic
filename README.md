@@ -33,6 +33,34 @@ Run the sketch...your motor should spin.  Adjust the small, white pot on the dri
 
 Here's a closer look at what's going on, and some suggestions for controlling the stepper.
 
+### Step Size
+We select a "step size" by using MS1 and MS2.  In our current sketch, we've got both "high"...here's the truth table for which values select which step sizes:
+| MS1 | MS2 | Result |
+|--|--|--|
+| L | L | Full step (2 phase) |
+| H | L | Half step |
+| L | H | Quarter Step | 
+| L | L | Eighth Step |
 
+So, if we make both "LOW", we'll only be doing eighth steps...meaning we'll spin 1/8th as slow.  Try it!
 
+### Direction
+The `DIR` pin controls which way our stepper is spinning...and this depends on the polarity of the coil connections.  If we want to reverse the direction, change this line (in setup):
+```
+  digitalWrite(DIR_PIN, HIGH);
+```
+to 
+```
+  digitalWrite(DIR_PIN, LOW);
+```
+
+### Individual Steps
+The driver does one "step" every time we bring `STEP_PIN` High; if you look at "loop", you'll see we're continually doing this...1 ms high, 1 ms low  If you increase the delay here, you'll slow the motor down....and if you decrease it, you'll speed it up.  Note there *is* a low limit at which the motor can't keep up...and it'll just stop.  If you want a faster motor, (like for car wheels), your best bet is to do a traditional motor with a higher RPM.  Or use gears.
+
+With this, you can play around with the step size and time to count how many steps make a full revolution.
+
+## Next steps:
+Figure out a way to make the motor do exactly one full rotation, then wait a second, then repeat...
+
+Add control!  Use buttons, or a pot, or serial, or something else to control our motor.
 
