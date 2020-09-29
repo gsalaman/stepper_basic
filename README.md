@@ -32,7 +32,7 @@ Finally, you are going to want to connect your external batt to the two PWR IN p
 The big easy board needs at least 6v to run.  Each motor has different amperage requirements.  
 
 You may be able to get away with connecting VIN on the UNO to PWR IN on the easydrver board, but that's not ideal.  Here are some other options:
-* use either a 6v battery pack or 9v battery.  May be enough to drive that small stepper, but you are going to want more current.
+* use either a 6v battery pack or 9v battery.  May be enough to drive that small stepper, but you are eventually going to want more current either for this motor or for different motors.
 * Drive PWR IN with a wall wort.  Something in the 1-2 amp range, and if you pick 12v, you can use it with the big easy driver as well.
 
 ## The sketch
