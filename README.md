@@ -28,6 +28,13 @@ The stepper itself has two coils...on the stepper we're using, brown and black a
 
 Finally, you are going to want to connect your external batt to the two PWR IN pins...and note that GND here is also going to GND on the UNO.
 
+### A word on power...
+The big easy board needs at least 6v to run.  Each motor has different amperage requirements.  
+
+You may be able to get away with connecting VIN on the UNO to PWR IN on the easydrver board, but that's not ideal.  Here are some other options:
+* use either a 6v battery pack or 9v battery.  May be enough to drive that small stepper, but you are going to want more current.
+* Drive PWR IN with a wall wort.  Something in the 1-2 amp range, and if you pick 12v, you can use it with the big easy driver as well.
+
 ## The sketch
 Run the sketch...your motor should spin.  Adjust the small, white pot on the driver board with your screwdriver until you get a nice, smooth motion.  This is controlling the current that the stepper is using.
 
