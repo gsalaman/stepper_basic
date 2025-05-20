@@ -1,3 +1,15 @@
+# 2025 Stepper notes
+
+Trying this one for Dawson:
+https://www.adafruit.com/product/858?gQT=1
+
+Wires:
+Pink and Orange to one coil (a)
+Yellow and blue to the other (b)
+
+
+
+
 # Basic Stepper Motor control
 Let's say we want more control over a motor...either exact speeds or exact number of revolutions (or both!).  This is where stepper motors come into play.
 
