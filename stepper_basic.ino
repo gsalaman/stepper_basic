@@ -15,16 +15,15 @@ void setup()
   pinMode(MS1_PIN, OUTPUT);
   pinMode(MS2_PIN, OUTPUT);
   pinMode(ENABLE_PIN, OUTPUT);
-
-  //set step size.
+  
   digitalWrite(ENABLE_PIN, LOW);
 
   digitalWrite(DIR_PIN, HIGH);
 
   // LOW/LOW = full step.
   // HIGH/HIGH = 1/8 step
-  digitalWrite(MS1_PIN, HIGH);
-  digitalWrite(MS2_PIN, HIGH);
+  digitalWrite(MS1_PIN, LOW);
+  digitalWrite(MS2_PIN, LOW);
 
   Serial.println("inited");
 }
