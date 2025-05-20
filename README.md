@@ -1,3 +1,15 @@
+# 2025 Stepper notes
+
+Trying this one for Dawson:
+https://www.adafruit.com/product/858?gQT=1
+
+Wires:
+Pink and Orange to one coil (a)
+Yellow and blue to the other (b)
+
+
+
+
 # Basic Stepper Motor control
 Let's say we want more control over a motor...either exact speeds or exact number of revolutions (or both!).  This is where stepper motors come into play.
 
@@ -40,7 +52,7 @@ We select a "step size" by using MS1 and MS2.  In our current sketch, we've got 
 | L | L | Full step (2 phase) |
 | H | L | Half step |
 | L | H | Quarter Step | 
-| L | L | Eighth Step |
+| H | H | Eighth Step |
 
 So, if we make both "LOW", we'll be doing full steps...meaning we'll spin eight times as fast.  Try it!
 
