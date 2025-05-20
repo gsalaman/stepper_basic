@@ -40,7 +40,7 @@ We select a "step size" by using MS1 and MS2.  In our current sketch, we've got 
 | L | L | Full step (2 phase) |
 | H | L | Half step |
 | L | H | Quarter Step | 
-| L | L | Eighth Step |
+| H | H | Eighth Step |
 
 So, if we make both "LOW", we'll be doing full steps...meaning we'll spin eight times as fast.  Try it!
 
